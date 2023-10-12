@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Platillos</title>
+</head>
+<body>
+  <h1>Listado de Platillos</h1>
+  <table id="platillosTable">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <h2>Agregar Platillo</h2>
+  <form id="addForm">
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="descripcion" placeholder="Descripción">
+    <input type="number" id="precio" placeholder="Precio">
+    <button type="submit">Agregar</button>
+  </form>
+  <div id="searchResult"></div>
+  <script src="app.js"></script>
+
+  <h2>Buscar Platillo</h2>
+  <input type="text" id="searchInput" placeholder="Nombre del platillo">
+  <button id="searchButton">Buscar</button>
+  <div id="searchResult"></div>
+
+  <h2>Editar Platillo</h2>
+  <form id="editForm">
+    <input type="text" id="editNombre" placeholder="Nombre">
+    <input type="text" id="editDescripcion" placeholder="Descripción">
+    <input type="number" id="editPrecio" placeholder="Precio">
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h2>Eliminar Platillo</h2>
+  <button id="deleteButton">Eliminar</button>
+</body>
+</html>
